@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED00E33F289459750066B1EE /* OffersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED00E33E289459750066B1EE /* OffersPage.swift */; };
 		ED1D94AD2891C5B500C9B016 /* CoffeeMastersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D94AC2891C5B500C9B016 /* CoffeeMastersApp.swift */; };
 		ED1D94AF2891C5B500C9B016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D94AE2891C5B500C9B016 /* ContentView.swift */; };
 		ED1D94B12891C5B900C9B016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1D94B02891C5B900C9B016 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED00E33E289459750066B1EE /* OffersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPage.swift; sourceTree = "<group>"; };
 		ED1D94A92891C5B500C9B016 /* CoffeeMasters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMasters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1D94AC2891C5B500C9B016 /* CoffeeMastersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMastersApp.swift; sourceTree = "<group>"; };
 		ED1D94AE2891C5B500C9B016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED00E340289464360066B1EE /* Page views */ = {
+			isa = PBXGroup;
+			children = (
+				ED00E33E289459750066B1EE /* OffersPage.swift */,
+			);
+			path = "Page views";
+			sourceTree = "<group>";
+		};
 		ED1D94A02891C5B500C9B016 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +65,7 @@
 			children = (
 				ED1D94AC2891C5B500C9B016 /* CoffeeMastersApp.swift */,
 				ED1D94AE2891C5B500C9B016 /* ContentView.swift */,
+				ED00E340289464360066B1EE /* Page views */,
 				ED1FD071289305FB00B80CCC /* Offer.swift */,
 				ED1D94B02891C5B900C9B016 /* Assets.xcassets */,
 				ED1D94B22891C5B900C9B016 /* Preview Content */,
@@ -141,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED1FD072289305FB00B80CCC /* Offer.swift in Sources */,
+				ED00E33F289459750066B1EE /* OffersPage.swift in Sources */,
 				ED1D94AF2891C5B500C9B016 /* ContentView.swift in Sources */,
 				ED1D94AD2891C5B500C9B016 /* CoffeeMastersApp.swift in Sources */,
 			);

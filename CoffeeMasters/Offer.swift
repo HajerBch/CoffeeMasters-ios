@@ -11,23 +11,30 @@ struct Offer: View {
     var title = "This is a title"
     var description = "this is a long long description of the title!"
     var body: some View {
-        VStack{
+        ZStack{
+            Image("background")
+                .frame(maxWidth:.infinity, maxHeight: 200)
+                .clipped()
+            VStack{
             Text(title)
                 .font(.largeTitle)
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.center)
                 .padding()
+                .background(Color("CardBackground"))
             Text(description)
-        }.padding()
+                .padding()
+                .background(Color("CardBackground"))
+                
+            }
+            
+        }
     }
 }
 
 struct Offer_Previews: PreviewProvider {
     static var previews: some View {
-        Group{
-            Offer(title: "This is a new title", description: "and this is another description")
-            Offer(title: "This is a second title", description: "and this is a second description")
-        }
+            Offer(title: "My offer", description: "and this is another description")
         .previewLayout(.fixed(width: 350, height: 200))
     }
 }

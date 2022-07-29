@@ -9,11 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-           greeting()
-           greeting()
-           greeting()
+        TabView{
+            Text("Home")
+                .tabItem{
+                    Image(systemName: "cup.and.saucer")
+                    Text("Home")
+                }
+            OffersPage()
+                .tabItem{
+                    Image(systemName: "tag")
+                    Text("Offers")
+                }
+            Text("Cart")
+                .tabItem{
+                    Image(systemName: "cart")
+                    Text("Home")
+                }
+            Text("Info")
+                .tabItem{
+                    Image(systemName: "info")
+                    Text("info")
+                }
         }
+        
+        
         }
     }
 struct greeting: View {
@@ -31,6 +50,7 @@ struct greeting: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-            ContentView()
+        ContentView()
+            .previewDevice("iPhone 11")
     }
 }
